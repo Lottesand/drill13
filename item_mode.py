@@ -1,6 +1,7 @@
 from pico2d import *
 import game_framework
 import game_world
+import play_mode
 
 image = None
 
@@ -34,6 +35,10 @@ def handle_events():
     for event in events:
         if event.type == SDL_QUIT:
             game_framework.quit()
+        elif event.type == SDL_KEYDOWN:
+            if event.key == SDLK_0:
+                play_mode.set_ball_type(0)
+                game_framework.pop_mode()
 
 
 def pause():
