@@ -24,6 +24,8 @@ def update():
 def render():
     clear_canvas()
     game_world.render()
+    if image:
+        image.draw(400, 300)
     update_canvas()
 
 
