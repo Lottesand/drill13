@@ -56,3 +56,8 @@ def pause():
 def resume():
     if boy and boy.state == 'IDLE':
         boy.idle_started_at = get_time()
+
+
+def set_ball_type(ball_type):
+    if boy:
+        boy.ball_type = ball_type
