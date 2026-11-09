@@ -39,6 +39,9 @@ def handle_events():
             if event.key == SDLK_0:
                 play_mode.set_ball_type(0)
                 game_framework.pop_mode()
+            elif event.key == SDLK_1:
+                play_mode.set_ball_type(1)
+                game_framework.pop_mode()
 
 
 def pause():
