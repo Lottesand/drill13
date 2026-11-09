@@ -14,7 +14,7 @@ class Ball:
 
     def update(self):
         self.x += self.velocity
-        if self.x < 0 or self.x > get_canvas_width():
+        if self.x < -25 or self.x > get_canvas_width() + 25:
             game_world.remove_object(self)
 
     def draw(self):
